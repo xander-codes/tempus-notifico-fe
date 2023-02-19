@@ -1,4 +1,4 @@
-const BASE_URL = 'https://tempus-notifico-api.onrender.com/';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export async function deleteFromDb(id) {
     await fetch(BASE_URL + "products/" + id, {
